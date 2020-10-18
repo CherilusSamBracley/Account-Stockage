@@ -1,0 +1,56 @@
+#Account Storage
+
+from tkinter import*
+window=Tk()
+
+
+label_f=Label(window,text="Username")
+label_f.pack()
+
+first_label=Entry(window)
+first_label.pack()
+
+
+label_s=Label(window,text="Email adress")
+label_s.pack()
+second_label=Entry(window)
+second_label.pack()
+
+
+
+label_t=Label(window,text="Password")
+label_t.pack()
+third_label=Entry(window)
+third_label.pack()
+
+
+
+def action():
+    val_one=first_label.get()
+    val_two=second_label.get()
+    val_three=third_label.get()
+
+
+
+    label_one=Label(window,text=val_one)
+    label_one.pack()
+
+
+
+    label_two=Label(window,text=val_two)
+    label_two.pack()
+
+
+
+    label_three=Label(window,text=val_three)
+    label_three.pack()
+
+
+
+
+save=Button(window,text="Save Data",command=action)
+save.pack()
+
+
+window.mainloop()
+
